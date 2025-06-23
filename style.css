@@ -1,0 +1,27 @@
+#header,#footer {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+}
+#nav{
+background-color: blue;
+    color: white;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 0px 0px 0px;
+    text-align: center;
+
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 50px;;
+}
+ul li a:hover {
+    background-color: #ddd;
+    color: black;
+    font-weight: bold;
+}
