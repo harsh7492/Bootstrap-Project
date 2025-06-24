@@ -1,88 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Document</title>
 </head>
-<body>
-  <div class="container mt-5">
-    <div class="row">
-        <div class="col-12 bg-info">
-            <p class="h2 text-center text-light">Registration Form</p>
-        </div>
-    </div>
-    <div class="row">
-    <div class="col-12 bg-info">
-        <form action="" method="get">
-       <div class="mb-3">
-        <label for="fname" class="form-label fw-bold">First Name</label>
-            <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter First Name" required>
-       </div>
-       <div class="mb-3">
-        <label for="lname" class="form-label fw-bold">Last Name</label>
-            <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Last Name" required>
-       </div>
-       <div class="mb-3">
-        <label for="uname" class="form-label fw-bold">User Name</label>
-            <input type="text" name="uname" id="uname" class="form-control" placeholder="Enter User Name" required>
-       </div>
-       <div class="mb-3">
-        <label for="email" class="form-label fw-bold">Email</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-       </div>
-       <div class="mb-3">
-        <label for="pass" class="form-label fw-bold">Password</label>
-            <input type="password" name="password" id="pass" class="form-control" placeholder="Enter your password" required>
-       </div>
-       <span class="form-text bg-light">Password Must contain one specal character</span>
-       <div class="mb-3">
-        <label for="img" class="form-label fw-bold">Upload your image</label>
-            <input type="file" name="image" id="img" class="form-control" placeholder="Upload your image" required>
-       </div>
-       <div class="mb-3">
-        <label for="gen" class="form-label fw-bold">Gender</label>
-        <br>
-        <input type="radio" name="Gender" id="gen"class="form-check-input" required>
-        <label for="gen" class="form-check-label">MALE</label>
-        <br>
-        <input type="radio" name="Gender" id="gen"class="form-check-input" required>
-        <label for="gen" class="form-check-label">FEMALE</label>
-       </div>
-       <div class="mb-3">
-        <label for="dob" class="form-label fw-bold">Date of Birth</label>
-            <input type="date" name="dob" id="dob" class="form-control" placeholder="Enter your date of birth" required>
-       </div>
-       <div class="mb-3">
-        <label for="skill" class="form-label fw-bold">Skills</label>
-        <br>
-        <input type="checkbox" name="Skills" id="skill"class="form-check-input"> HTML
-        <input type="checkbox" name="Skills" id="skill"class="form-check-input"> CSS
-        <input type="checkbox" name="Skills" id="skill"class="form-check-input"> JavaScript
-        <input type="checkbox" name="Skills" id="skill"class="form-check-input"> Python
-       </div>
-<div class="mb-3">
-    <label for="city" class="form-label fw-bold">City</label>
-    <select name="city" id="city" class="form-select" required>
-        <option value="Select City">Select City</option>
-        <option value="Delhi">Delhi</option>
-        <option value="Varanasi">Varanasi</option>
-        <option value="Mumbai">Mumbai</option>
-        <option value="Bangalore">Bangalore</option>
-    </select>
-</div>
-<div class="d-grid">
-    <input type="submit" value="Submit Form" class="btn btn-primary">
-</div>
-<div class="d-grid">
-    <input type="reset" value="Reset Form" class="btn btn-danger mt-2">
-</div>
 
+<body>
+    <div class="container mt-2 border border-black bg-warning bg-gradient">
+        <div class="row ">
+            <div class="col-12 bg-success">
+                <p class="h2 text-center text-white">Registration Form</p>
+            </div>
+        </div>
+        <form action="" method="get">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="mb-3 mt-3">
+                        <label for="fname" class="form-label fw-bold">First Name</label>
+                        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter First Name"
+                            required>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3 mt-3">
+                        <label for="lname" class="form-label fw-bold">Last Name</label>
+                        <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter Last Name"
+                            required>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="mb-3 mt-3">
+                        <label for="uname" class="form-label fw-bold">User Name</label>
+                        <input type="text" name="uname" id="uname" class="form-control" placeholder="Enter User Name"
+                            required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="pass" class="form-label fw-bold">Password</label>
+                        <input type="password" name="password" id="pass" class="form-control"
+                            placeholder="Enter your password" required>
+                    </div>
+                    <span class="form-text bg-light">Password Must contain one specal character</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="img" class="form-label fw-bold">Upload your image</label>
+                        <input type="file" name="image" id="img" class="form-control" placeholder="Upload your image"
+                            required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="dob" class="form-label fw-bold">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" class="form-control"
+                            placeholder="Enter your date of birth" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-3">
+                    <div class="mb-4 mt-2">
+                        <label for="gen" class="form-label fw-bold">Gender</label>
+
+                        <input type="radio" name="Gender" id="gen" class="form-check-input" required>
+                        <label for="gen" class="form-check-label">MALE</label>
+
+                        <input type="radio" name="Gender" id="gen" class="form-check-input" required>
+                        <label for="gen" class="form-check-label">FEMALE</label>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="mb-4 mt-2">
+                        <label for="course" class="form-label fw-bold">Course</label>
+
+                        <input type="radio" name="course" id="course" class="form-check-input" required>
+                        <label for="course" class="form-check-label">BCA</label>
+
+                        <input type="radio" name="course" id="course" class="form-check-input" required>
+                        <label for="course" class="form-check-label">BBA</label>
+
+                        <input type="radio" name="course" id="course" class="form-check-input" required>
+                        <label for="course" class="form-check-label">MCA</label>
+
+                        <input type="radio" name="course" id="course" class="form-check-input" required>
+                        <label for="course" class="form-check-label">MBA</label>
+                    </div>
+                </div>
+                <div class="col-5 ">
+                    <div class="mb-3 mt-2">
+                        <label for="skill" class="form-label fw-bold">Skills</label>
+
+                        <input type="checkbox" name="Skills" id="skill" class="form-check-input"> HTML
+                        <input type="checkbox" name="Skills" id="skill" class="form-check-input"> CSS
+                        <input type="checkbox" name="Skills" id="skill" class="form-check-input"> JavaScript
+                        <input type="checkbox" name="Skills" id="skill" class="form-check-input"> Python
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="city" class="form-label fw-bold">City</label>
+                        <select name="city" id="city" class="form-select" required>
+                            <option value="Select City">Select City</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Varanasi">Varanasi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bangalore">Bangalore</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="mb-3">
+                        <label for="Address" class="form-label fw-bold">Address</label>
+                        <textarea name="Address" id="Address" class="form-control" required></textarea>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <input type="submit" value="Submit Form" class="btn btn-primary mb-2">
+        <input type="reset" value="Reset Form" class="btn btn-danger mb-2">
         </form>
-    </div>
-    </div>
-    </div>
-    <script src="bootstrap.js"></script>
-</body>
-</html>
+        </div>
